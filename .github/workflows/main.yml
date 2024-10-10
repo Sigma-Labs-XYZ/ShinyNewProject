@@ -1,4 +1,4 @@
-name: Print Message
+name: Run Code
 on:
   workflow_dispatch:
   pull_request:

@@ -1,9 +1,10 @@
-def find_longest(arr):
-    longest = arr[1]
+def find_longest(arr: list) -> str:
+    """Find longest string"""
+    longest = arr[0]
     for i in range(1, len(arr)):
         if len(arr[i]) > len(longest):
             longest = arr[i]
-        return longest
+    return longest
 
 
 if __name__ == "__main__":

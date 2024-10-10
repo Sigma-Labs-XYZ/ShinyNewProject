@@ -1,0 +1,14 @@
+name: Print Message
+on:
+  workflow_dispatch:
+  pull_request:
+  push:
+    branches:
+      - main
+jobs:
+  echo:
+    name: echo a string
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo
+        run: echo "Look! I'm a string!"
